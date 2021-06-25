@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONCOURS | CES</title>
+    <link rel="stylesheet" href="../static/style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-question" id="container-question">
+        <span class="banner"></span>
+        <h1 class="title flex">Questions</h1>
+        <form id="questions-form" class="flex" name="questions">
+            <div class="question">
+                <p class="instruction">Quel est le nom du fondateur du Consumer Electronics Show ?</p>
+                <div class="answer flex">
+                    <input type="radio" name="founder" value="Bill Gates" id="bill" class="radio" required/>
+                    <label class="choices flex" for="bill"> Bill Gates</label>
+                    <input type="radio" name="founder" value="Steve Jobs" id="steve" class="radio" required/>
+                    <label class="choices flex" for="steve"> Steve Jobs</label>
+                    <input type="radio" name="founder" value="Jack Wayman" id="wayman" class="radio" required/>
+                    <label class="choices flex" for="wayman"> Jack Wayman</label>
+                </div>
+            </div>
+            <div class="question">
+                <p class="instruction">En quelle année est lancé le CES pour la première fois ?</p>
+                <div class="answer flex">
+                    <input type="radio" value="1973" name="years" id="1973" class="radio" required/>
+                    <label class="choices flex" for="1973"> 1973</label>
+                    <input type="radio" value="1970" name="years" id="1970" class="radio" required/>
+                    <label class="choices flex" for="1970"> 1970</label>
+                    <input type="radio" value="1967" name="years" id="1967" class="radio" required/>
+                    <label class="choices flex" for="1967"> 1967</label>
+                </div>
+            </div>
+            <div class="question">
+                <p class="instruction">Dans quelle ville s’est déroulé ce premier salon ?</p>
+                <div class="answer flex">
+                    <input type="radio" name="city" value="Los Angeles" id="los-angeles" class="radio" required/>
+                    <label class="choices flex" for="los-angeles"> Los Angeles</label>
+                    <input type="radio" name="city" value="New York" id="new-york" class="radio" required/>
+                    <label class="choices flex" for="new-york"> New York</label>
+                    <input type="radio" name="city" value="Chicago" id="chicago" class="radio" required/>
+                    <label class="choices flex" for="chicago"> Chicago</label>
+                </div>
+            </div>
+            <div class="question">
+                <p class="instruction">Quelle technologie fut présentée en avant-première au CES de 1996 ?</p>
+                <div class="answer flex">
+                    <input type="radio" name="technology" value="RDS" id="rds" class="radio" required/>
+                    <label class="choices flex" for="rds"> RDS</label>
+                    <input type="radio" name="technology" value="MP3" id="mp3" class="radio" required/>
+                    <label class="choices flex" for="mp3"> MP3</label>
+                    <input type="radio" name="technology" value="DVD" id="dvd" class="radio" required/>
+                    <label class="choices flex" for="dvd"> DVD</label>
+                </div>
+            </div>
+            <div class="question">
+                <p class="instruction">Quel nom connu portent les interventions des présidents d’entreprises au CES ?</p>
+                <div class="answer flex">
+                    <input type="radio" name="name" value="Keynotes" id="keynotes" class="radio" required/>
+                    <label class="choices flex" for="keynotes"> Keynotes</label>
+                    <input type="radio" name="name" value="Tech Talks" id="tech-talks" class="radio" required/>
+                    <label class="choices flex" for="tech-talks"> Tech Talks</label>
+                    <input type="radio" name="name" value="Pitchs" id="pitchs" class="radio" required/>
+                    <label class="choices flex" for="pitchs"> Pitchs</label>
+                </div>
+            </div>
+            <div class="btn flex">
+                <a href="../index.html" class="btn-cancel flex">Annuler</a>
+                <button class="btn-validate">Valider</i></button>
+            </div>
+            
+        </form>
+    </div>
+
+    <div class="container-validation" id="container-validation">
+        <span class="banner"></span>
+        <h1 class="title flex">Contact</h1>
+        <form name="send_form" id="send_form" class="send_form flex">
+            <div class="user-box">
+                <input type="text" name="name" required>
+                <label>Nom</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="first_name" required>
+                <label>Prénom</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="companion" required>
+                <label>Accompagnant(s)</label>
+            </div>
+            <div class="user-box">
+                <input type="mail" name="mail" required>
+                <label>Mail</label>
+            </div>
+            <div class="btn flex">
+                <a href="../index.html" class="btn-cancel flex">Annuler</a>
+                <button class="btn-validate">Valider</i></button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-result" id="container-result">
+        <div class="result flex">
+            <p>Résultat !</p>
+            <div class="circle-result" id="circle-result">
+                <span class="circle-hide" id="circle-hide"></span>
+                <p id="questionnaire-results"></p>
+            </div>
+            <p>Cliquez sur le cercle pour voir votre résultat</p>
+        </div>
+        <div class="gratitude">
+            <p>En vous remerciant d'avoir participé à notre concours</p>
+        </div>
+        <a href="../index.html" class="redirect flex">Accueil</a>
+    </div>
+
+    <script src="../static/script/concours/script.js"></script>
+</body>
+</html>
